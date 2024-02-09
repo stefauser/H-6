@@ -1,0 +1,401 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px;
+    height: 90vh;
+    background-image: url(https://github.com/SocialOplesk/hack-html-1/blob/main/hack_6/img/2.png?raw=true);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+header .capsula{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: 20px;
+    width: 80px;
+    border-radius: 10px;
+    color: white;
+}
+
+header .textos{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+
+header .circulo{
+    width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #00BF63;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin:0px auto;
+}
+
+
+header .circulo>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    font-weight: bold;
+}
+
+header .parrafos{
+    text-align: center;
+    color: black;
+}
+
+#imagenes .container>.img1{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    padding: 10px, 10px 0 10px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+#imagenes .container>.img2{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    padding: 10px, 10px 0 10px;
+    margin: 60px auto;
+    text-align: center;
+}
+#imagenes.container>.img2>p{
+    text-decoration: line-through red;
+}
+
+#imagenes .container>.img1>p{
+    text-decoration: line-through red;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 50px;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.black>p{
+    color: white;
+    background: #00BF63;
+    text-align: center;
+    width: 90px;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px){
+    header .container{
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        padding: 0px 15px 0 80px;
+        height: 90vh;
+        background-image: url(https://github.com/SocialOplesk/hack-html-1/blob/main/hack_6/img/2.png?raw=true);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header .capsula{
+
+        background: black;
+        height: 35px;
+        width: 110px;
+        border-radius: 20px;
+        color: white;
+        font-size: x-large;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    header .textos{
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 10px;
+        margin-right: 100px;
+    }
+
+    header .textos>h1{
+        text-align: left;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    header .textos>span{
+        text-align: right;
+        padding: 0;
+        margin: 0;
+    }
+
+    header .textos>.circulo{
+        margin-left: 180px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #00BF63;
+    }
+
+    header .circulo>span{
+        color: white;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+
+    header .parrafos{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    #imagenes .container{
+        display:flex;
+        justify-content: space-between;
+        height: 150px;
+        width: 150px;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 300px;
+    }
+    #imagenes.container>.img1{
+        padding: auto;
+    }
+
+    #imagenes .container>.img2{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 30px;        
+    }
+
+    .black{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background: black;
+        height: 100px;
+        width: 1200px;
+        margin-top: 20px;
+    }
+
+    .black>p{
+        margin-left: 65px;
+        color: white;
+        background: #00BF63;
+        text-align: center;
+        width: 120px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: x-large;
+    }
+}
+
+@media (min-width:820px){
+
+    header .textos{
+        font-size: 30px;
+    }
+
+    header .textos>.circulo{
+        margin-left: 160px;
+        width: 140px;
+        height: 140px;
+    }
+
+    header .circulo>span{
+        font-size: 40px;
+    }
+
+    #imagenes .container>.img1{
+        padding: auto;
+        margin-left: 15px;
+    }
+
+    #imagenes .container>.img2{
+        padding: auto;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width:836px){
+
+    #imagenes.container>.img1{
+        padding: auto;
+        margin-left: 30px;
+    }
+
+    #imagenes .container>.img2{
+        padding: auto;
+        margin-left: 30px;
+    }
+}
+
+
+@media (min-width:912px){
+    
+    header .textos>.circulo{
+        margin-left: 280px;
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+@media (min-width:918px){
+    
+
+    #imagenes .container>.img1{
+        padding: auto;
+        margin-left: 45px;
+    }
+
+    #imagenes .container>.img2{
+        padding: auto;
+        margin-left: 45px;
+    }
+}
+
+@media (min-width:989px){
+
+    #imagenes .container>.img1{
+        padding: auto;
+        margin-left: 55px;
+    }
+
+    #imagenes .container>.img2{
+        padding: auto;
+        margin-left: 55px;
+    }
+}
+
+@media (min-width: 1024px){
+
+
+    header .textos>h1{
+        text-align: left;
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    header .textos{
+        font-size: 20px;
+    }
+
+    header .textos>.circulo{
+        margin-left: 280px;
+        width: 150px;
+        height: 140px;
+    }
+
+    #imagenes .container>.img1{
+        padding: auto;
+        margin-left: 70px;
+    }
+
+    #imagenes- .container>.img2{
+        padding: auto;
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 1280px){
+
+    header .textos>.circulo{
+        margin-left:400px;
+        width: 170px;
+        height: 170px;
+    }
+
+    header .circulo>span{
+        font-size: 50px;
+    }
+
+    #imagenes .container>.img1{
+        margin-left: 140px;
+    }
+
+    #imagenes .container>.img2{
+        margin-left: 140px;
+    }
+}
+
+@media (min-width: 1261px){
+
+    #imagenes .container>.img1{
+        margin-left: 140px;
+    }
+
+    #imagenes .container>.img2{
+        margin-left: 140px;
+    }
+}
+@media (min-width: 1293px){
+
+    #imagenes .container>.img1{
+        margin-left: 150px;
+    }
+
+    #imagenes .container>.img2{
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1476px){
+
+    #imagenes .container>.img1{
+        margin-left: 240px;
+    }
+
+    #imagenes .container>.img2{
+        margin-left: 240px;
+    }
+}
+
+@media (min-width: 1560px){
+
+    #imagenes .container>.img1{
+        margin-left: 440px;
+    }
+
+    #imagenes .container>.img2{
+        margin-left: 440px;
+    }
+}
+
+
+
+
+
+
+
